@@ -53,7 +53,7 @@
   document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var formData = new FormData(this);
-    fetch('http://serveo.net:10532/signup', {
+    fetch('http://serveo.net:10532/', {
       method: 'POST',
       body: formData
     })
